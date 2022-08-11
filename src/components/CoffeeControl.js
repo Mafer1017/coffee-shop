@@ -8,7 +8,8 @@ class CoffeeControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      mainCoffeeList: []
+      mainCoffeeList: [],
+      selectedCoffee: null
     };
   }
 

@@ -4,8 +4,8 @@ function Coffee(props){
   return (
     <React.Fragment>
       <h3>{props.name} - {props.origin}</h3>
-      <p><em>{props.roast}</em></p>
-      <p><em>{props.price}</em></p>
+      <p><em>Roast: <b>{props.roast}</b></em></p>
+      <p><em>Price per Pound: ${props.price}</em></p>
       <hr/>
     </React.Fragment>
   );
