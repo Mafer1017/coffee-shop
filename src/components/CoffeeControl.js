@@ -12,9 +12,15 @@ class CoffeeControl extends React.Component {
   }
 
   render(){
+    let currentlyVisibleState = null;
+    if (this.state.formVisibleOnPage) {
+      currentlyVisibleState = <NewCoffeeForm />
+    } else {
+      currentlyVisibleState = <CoffeeList />
+    }
     return (
       <React.Fragment>
-
+        {currentlyVisibleState}
       </React.Fragment>
     );
   }
