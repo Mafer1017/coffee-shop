@@ -25,11 +25,16 @@ const mainCoffeeList = [
 
 function CoffeeList(){
   return (
-    <Coffee
-      name="Stump Town"
-      origin="Portland"
-      roast="Dark"
-      price="$20.00"/>
+    <React.Fragment>
+      <hr/>
+      {mainCoffeeList.map((coffee, index) =>
+        <Coffee name={coffee.name}
+          origin={coffee.origin}
+          roast={coffee.roast}
+          price={coffee.price}
+          key={index}/>      
+      )}
+    </React.Fragment>
   );
 }
 
