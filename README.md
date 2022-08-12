@@ -24,7 +24,7 @@ _This project allows users to track inventory for a local coffee shop._
 * Next, run `npm start` to run a live server and interact with the project in your browser.
 
 ## Component Diagram
-| <img src="./src/img/CoffeDiagram.PNG">
+| <img src="./src/img/CoffeeDiagram.PNG">
 
 ## Known Bugs
 
