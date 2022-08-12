@@ -8,6 +8,7 @@ function Coffee(props){
       <h3>{props.name} - {props.origin}</h3>
       <p><em>Roast: <b>{props.roast}</b></em></p>
       <p><em>Price per Pound: ${props.price}</em></p>
+      <p><em>Pounds Left: <b>{props.total}</b></em></p>
       <hr/>
       </div>
     </React.Fragment>
@@ -19,6 +20,7 @@ Coffee.propTypes = {
   origin: PropTypes.string,
   roast: PropTypes.string,
   price: PropTypes.string,
+  total: PropTypes.number,
   id: PropTypes.string,
   whenCoffeeClicked: PropTypes.func
 };
