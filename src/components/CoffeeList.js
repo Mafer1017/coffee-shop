@@ -7,6 +7,8 @@ function CoffeeList(props){
   return (
     <React.Fragment>
       <hr/>
+      <h2>Roast Coffee Shop's Available Beans:</h2>
+      <hr/>
       {props.coffeeList.map((coffee) =>
         <Coffee 
           whenCoffeeClicked = { props.onCoffeeSelection }
